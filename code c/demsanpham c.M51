@@ -1,0 +1,138 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        05/22/2019  22:47:06  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE demsanpham c.obj TO demsanpham c
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  demsanpham c.obj (DEMSANPHAM_C)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SIDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  demsanpham c (DEMSANPHAM_C)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000CH     UNIT         ?DT?DEMSANPHAM_C
+            IDATA   0014H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+            CODE    0006H     008CH     UNIT         ?C_C51STARTUP
+            CODE    0092H     008BH     UNIT         ?C?LIB_CODE
+            CODE    011DH     0039H     UNIT         ?PR?NGAT0?DEMSANPHAM_C
+            CODE    0156H     0037H     UNIT         ?PR?MAIN?DEMSANPHAM_C
+            CODE    018DH     001AH     UNIT         ?PR?_DELAY?DEMSANPHAM_C
+            CODE    01A7H     0011H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   demsanpham c (DEMSANPHAM_C)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?PR?NGAT0?DEMSANPHAM_C
+  +--> ?PR?_DELAY?DEMSANPHAM_C
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP
+  +--> ?PR?MAIN?DEMSANPHAM_C
+  +--> ?C_INITSEG
+
+?PR?MAIN?DEMSANPHAM_C
+  +--> ?PR?_DELAY?DEMSANPHAM_C
+
+
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2019  22:47:06  PAGE 2
+
+
+SYMBOL TABLE OF MODULE:  demsanpham c (DEMSANPHAM_C)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        DEMSANPHAM_C
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:00A0H         PUBLIC        P2
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  C:0195H         PUBLIC        _delay
+  C:0156H         PUBLIC        main
+  B:00A0H.0       PUBLIC        Led1
+  B:00A0H.1       PUBLIC        Led2
+  B:0088H.0       PUBLIC        IT0
+  C:011DH         PUBLIC        ngat0
+  D:0008H         PUBLIC        led7
+  D:0012H         PUBLIC        x
+  -------         PROC          L?0012
+  -------         ENDPROC       L?0012
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0195H         LINE#         9
+  C:0195H         LINE#         10
+  C:0195H         LINE#         12
+  C:01A6H         LINE#         13
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  C:0156H         LINE#         15
+  C:0156H         LINE#         16
+  C:0156H         LINE#         17
+  C:0159H         LINE#         18
+  C:015BH         LINE#         19
+  C:015BH         LINE#         20
+  C:015BH         LINE#         21
+  C:015DH         LINE#         22
+  C:016BH         LINE#         23
+  C:016EH         LINE#         24
+  C:0170H         LINE#         25
+  C:0173H         LINE#         26
+  C:0175H         LINE#         27
+  C:0183H         LINE#         28
+  C:0186H         LINE#         29
+  C:0188H         LINE#         30
+  C:018BH         LINE#         31
+  -------         ENDPROC       MAIN
+  -------         PROC          NGAT0
+  C:011DH         LINE#         34
+  C:012CH         LINE#         36
+  C:012EH         LINE#         37
+  C:0136H         LINE#         38
+  C:0140H         LINE#         39
+  C:0147H         LINE#         40
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2019  22:47:06  PAGE 3
+
+
+  C:0149H         LINE#         41
+  -------         ENDPROC       NGAT0
+  -------         ENDMOD        DEMSANPHAM_C
+
+  -------         MODULE        ?C?SIDIV
+  C:0092H         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+
+  -------         MODULE        ?C?UIDIV
+  C:00C8H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+Program Size: data=21.0 xdata=0 code=440
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

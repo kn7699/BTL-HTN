@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\NDT-IT\Desktop\lap trinh vi dieu khien\BTL_nhom4-he thong dem san pham\code c\demsanpham c.uvproj
+Project File Date:  05/22/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling demsanpham c.c...
+demsanpham c.c(1): error C129: missing ';' before '.'
+demsanpham c.c(1): error C309: bad or missing filename
+demsanpham c.c(1): warning C318: can't open file ''
+demsanpham c.c(1): error C305: unterminated string/char const
+Target not created
+Build target 'Target 1'
+compiling demsanpham c.c...
+demsanpham c.c(21): error C202: 'M': undefined identifier
+demsanpham c.c(26): error C202: 'M': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling demsanpham c.c...
+linking...
+Program Size: data=21.0 xdata=0 code=440
+creating hex file from "demsanpham c"...
+"demsanpham c" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=21.0 xdata=0 code=440
+creating hex file from "demsanpham c"...
+"demsanpham c" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling demsanpham c.c...
+linking...
+Program Size: data=21.0 xdata=0 code=440
+creating hex file from "demsanpham c"...
+"demsanpham c" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=21.0 xdata=0 code=440
+creating hex file from "demsanpham c"...
+"demsanpham c" - 0 Error(s), 0 Warning(s).
